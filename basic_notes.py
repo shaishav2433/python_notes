@@ -48,3 +48,33 @@ def count_from_zero_to_n(n):
         raise UncountableError(n)
     for x in range(0, n + 1):
         print(x)
+        
+        
+# Ban and Dan problem for try except else and finally use
+# note that if exception happens than else statement will not run, finally block will always run. 
+# in the special case below, the answer for two inputs 4 and 'dan' is 16.0 and error, the reason is finally block will run regardless of except block returning value to the function, and the value returned from finally get prioritized and hence error happens in case two.
+
+def power_of_two():
+    user_input = input('Please enter a number: ')
+    try:
+        n = float(user_input)
+    except ValueError:
+        print('Your input was invalid. Using default value 0')
+        return 0
+    finally:
+        n_square = n ** 2
+        return n_square
+        
+def power_of_two():
+    user_input = input('Please enter a number: ')
+    try:
+        n = float(user_input)
+        n_square = n ** 2
+        return n_square
+    except ValueError:
+        print('Your input was invalid. Using default value 0')
+        return 0
+
+print(power_of_two())
+
+        
