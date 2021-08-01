@@ -77,6 +77,6 @@ def power_of_two():
 
 print(power_of_two())
 
-#simple test for git commit
 # git commit -m  " this is a comment"
+
         
