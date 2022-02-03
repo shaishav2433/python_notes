@@ -1,0 +1,28 @@
+Understand difference between keyword argument vs positional argument, later must go first during function defination & function call
+
+
+no spaces in function bracket equal sign
+e,g def add_values (a, b=5) , add_values(b=6, a=3)
+
+
+function return none by default, it is not recommended having different data type returned by function.
+
+
+# lambda function syntax: lambda x, y: x + y ==> function with parameter x and y and return value of x+y
+# use with assignment to different function name
+add = lambda x, y: x + y
+add(5,4) # returns 9
+# use 2 - direct
+(lambda x, y: x + y)(5,4)
+
+
+# dict comprehension refer to user_login.py
+embedded_list = [[0,"data_at_0"],[1,"data_at_1"]]
+dict1 = {list[0]: list[1] for list in embedded_list}
+
+# Object oriented programming.
+
+a function inside class is called method , 3 types of method 0 instance, static and class
+a method with __ is called special method/magic method
+
+
